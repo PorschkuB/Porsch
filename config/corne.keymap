@@ -7,7 +7,7 @@
 
 #define TAPPING_TERM 200
 
-/ {
+/ 
   behaviors {
     /*
     * td_lock groups locking functions into one key:
@@ -166,16 +166,4 @@
                            &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
-
-
   };
-
-  conditional_layers {
-    compatible = "zmk,conditional-layers";
-
-    Activate_EXT {
-      if-layers = <1 2>;
-      then-layer = <3>;
-    };
-  };
-};
