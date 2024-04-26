@@ -71,8 +71,8 @@
   keymap {
     compatible = "zmk,keymap";
 
-    base_layer {
-      label = "BASE";
+    base0_layer {
+      label = "BASE0";
       bindings = <
 &mt LC(LS(LALT)) TAB  &kp Q  &kp W  &kp E         &kp R           &kp T       &kp Y      &kp U           &kp I      &kp O    &kp P      &kp MINUS
 &kp LSHIFT            &kp A  &kp S  &kp D         &kp F           &kp G       &kp H      &kp J           &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
@@ -81,8 +81,8 @@
       >;
     };
 
-    symbols_layer {
-      label = "SYMBOLS";
+    symbols1_layer {
+      label = "SYMBOLS1";
       bindings = <
 &trans   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6    &kp N7  &kp N8    &kp N9    &kp N0  &trans
 &kp ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR          &kp RPAR           &trans
@@ -91,8 +91,8 @@
       >;
     };
 
-    nav_layer {
-      label = "NAV";
+    nav2_layer {
+      label = "NAV2";
       bindings = <
 &kp LG(LC(TAB))          &trans  &kp LG(LEFT_BRACKET)  &kp LS(TAB)        &kp TAB          &kp LG(RIGHT_BRACKET)    &kp LA(LEFT)       &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)  &trans  &trans
 &kp ESC           &trans  &trans                &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &trans                   &kp LEFT           &kp DOWN      &kp UP      &kp RIGHT      &trans  &trans
@@ -101,8 +101,8 @@
       >;
     };
 
-    extended_layer {
-      label = "EXT";
+    extended3_layer {
+      label = "EXT3";
       bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
 &kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
@@ -111,8 +111,8 @@
       >;
     };
 
-    extended1_layer {
-      label = "EXT1";
+    extended4_layer {
+      label = "EXT4";
       bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
 &kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
@@ -121,6 +121,35 @@
       >;
     };
 
+extended5_layer {
+      label = "EXT5";
+      bindings = <
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
+&kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &trans        &trans          &trans           &trans           &trans  &trans    
+                                    &trans        &trans        &trans          &trans           &trans           &trans
+      >;
+    };
+
+    extended6_layer {
+      label = "EXT6";
+      bindings = <
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
+&kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &trans        &trans          &trans           &trans           &trans  &trans    
+                                    &trans        &trans        &trans          &trans           &trans           &trans
+      >;
+    };
+
+    extended7_layer {
+      label = "EXT7";
+      bindings = <
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7           &kp F8           &kp F9                &kp F10               &kp F12
+&kp K_PP  &kp K_PREV        &kp K_NEXT     &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans &trans &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &trans        &trans          &trans           &trans           &trans  &trans    
+                                    &trans        &trans        &trans          &trans           &trans           &trans
+      >;
+    };
 
   };
 
