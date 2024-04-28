@@ -9,12 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Custom layer definitions
-#define WIND 0
-#define NAVI 1
-#define NUMS 2
-#define NUMK 3
-#define ADJS 4
-#define ADJSx 5
+#define Layer0 0
+#define Layer1 1
+#define Layer2 2
+#define Layer3 3
+#define Layer4 4
+#define Layer5 5
 
 / {
 
@@ -254,7 +254,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                WIND {
+                Layer0 {
 // -----------------------------------------------------------------------------------------
 // |  TAB     |  Q  |  W  |   E  |   R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL/ESC |  A  |  S  |   D  |   F  |  G  |   |  H  |  J   |  K  |  L  | ':; | ENTR |
@@ -267,7 +267,7 @@
               &mo NAVI &kp LALT &lt NUMS SPACE   &kp SPACE &kp LGUI &mo NUMK
                         >;
                 };
-                NAVI {
+                Layer1 {
 // -----------------------------------------------------------------------------------------
 // |     | HOME |  UP  |  END  | PGUP | SPC |   | VOLU | { | } | _ | + | DEL |
 // |     | LEFT | DOWN | RIGHT | PGDN | ENT |   | VOLD | [ | ] | - | = |  ;  |
@@ -280,7 +280,7 @@
                                             &trans &trans &trans   &trans &trans &trans
                         >;
                 };
-                NUMS {
+                Layer2 {
 // -----------------------------------------------------------------------------------------
 // |   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  _  |
 // | - |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | F12 |
@@ -293,7 +293,7 @@
                                  &trans &trans &trans      &kp DOT &trans &trans
                         >;
                 };
-                NUMK {
+                Layer3 {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  /  |  7  |  8  |  9  |  -  |   |     |     |     |     |     |      |
 // | BKSP |  *  |  4  |  5  |  6  |  +  |   |     |     |     |     |     |      |
@@ -306,7 +306,7 @@
                                        &kp KP_N0 &kp KP_DOT &kp KP_ENTER      &trans &trans &trans
                         >;
                 };
-                ADJS {
+                Layer4 {
 // -----------------------------------------------------------------------------------------
 // |       |     |     |     |     |     |    |    | CAPS | INS | SLCK | PSCRN |    |
 // |       | BT1 | BT2 | BT3 | BT4 | BT5 |    |    |      |     |      |       |    |
@@ -319,7 +319,7 @@
                                                      &trans &trans &trans         &trans &trans &trans
                         >;
                 };
-                ADJSx {
+                Layer5 {
 // -----------------------------------------------------------------------------------------
 // |       |     |     |     |     |     |    |    | CAPS | INS | SLCK | PSCRN |    |
 // |       | BT1 | BT2 | BT3 | BT4 | BT5 |    |    |      |     |      |       |    |
