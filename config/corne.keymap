@@ -10,7 +10,7 @@
 
 // Custom layer definitions
 #define BASE 0
-#define L1 1
+#define NAVI 1
 #define NUMS 2
 #define NUMK 3
 #define ADJS 4
@@ -254,7 +254,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                BASE {
+                WIND {
 // -----------------------------------------------------------------------------------------
 // |  TAB     |  Q  |  W  |   E  |   R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL/ESC |  A  |  S  |   D  |   F  |  G  |   |  H  |  J   |  K  |  L  | ':; | ENTR |
@@ -267,7 +267,7 @@
               &mo NAVI &kp LALT &lt NUMS SPACE   &kp SPACE &kp LGUI &mo NUMK
                         >;
                 };
-                L1 {
+                NAVI {
 // -----------------------------------------------------------------------------------------
 // |     | HOME |  UP  |  END  | PGUP | SPC |   | VOLU | { | } | _ | + | DEL |
 // |     | LEFT | DOWN | RIGHT | PGDN | ENT |   | VOLD | [ | ] | - | = |  ;  |
