@@ -78,7 +78,7 @@
             };
 
             // Test 10
-            tdcmdq: tap_dance_cmdq {
+            td10: TAP_DANCE_10 {
                 compatible = "zmk,behavior-tap-dance";
                 label = "TAP_DANCE_10";
                 #binding-cells = <0>;
@@ -87,7 +87,7 @@
             };
 
             // Test 11
-            tdcmdq: tap_dance_cmdq {
+            td11: TAP_DANCE_11 {
                 compatible = "zmk,behavior-tap-dance";
                 label = "TAP_DANCE_11";
                 #binding-cells = <0>;
@@ -96,7 +96,7 @@
             };
 
             // Test 12
-            tdcmdq: tap_dance_cmdq {
+            td12: TAP_DANCE_12 {
                 compatible = "zmk,behavior-tap-dance";
                 label = "TAP_DANCE_12";
                 #binding-cells = <0>;
