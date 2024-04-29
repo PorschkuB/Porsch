@@ -23,51 +23,7 @@
 
 // Tap Dance
         behaviors {
-            // single quote, colon, semicolon
-            tdsqclsc: tap_dance_sqclsc {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_0";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp SQT>, <&kp COLON>, <&kp SEMI>;
-            };
-
-            // comma, double quote
-            tdcmdq: tap_dance_cmdq {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_1";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp COMMA>, <&kp DQT>;
-            };
-
-            // period, dash
-            tddtds: tap_dance_dtds {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_2";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp DOT>, <&kp MINUS>;
-            };
-
-            // forward slash, backslash
-            tdfsbs: tap_dance_fsbs {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_3";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp FSLH>, <&kp BSLH>;
-            };
-
-            // underscore, tilde, backslash
-            tdutbs: tap_dance_utbs {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_4";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp UNDER>, <&kp TILDE>, <&kp BSLH>;
-            };
-
+            
             // double-tap LSHIFT to turn on CAPS WORD
             tdcaps: td_caps_word {
                 compatible = "zmk,behavior-tap-dance";
@@ -77,31 +33,31 @@
                 bindings = <&kp LSHFT>, <&caps_word>;
             };
 
-            // Test 10
-            td10: TAP_DANCE_10 {
+            // Test 1
+            td10: TAP_DANCE_1 {
                 compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_10";
+                label = "TAP_DANCE_1";
                 #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp COMMA>, <&kp DQT>;
+                tapping-term-ms = <115>;
+                bindings = <&kp >, <&kp >;
             };
 
-            // Test 11
-            td11: TAP_DANCE_11 {
+            // Test 2
+            td11: TAP_DANCE_2 {
                 compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_11";
+                label = "TAP_DANCE_2";
                 #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&kp COMMA>, <&kp DQT>;
+                tapping-term-ms = <115>;
+                bindings = <&kp >, <&kp >;
             };
 
-            // Test 12
-            td12: TAP_DANCE_12 {
+            // Test 3
+            td12: TAP_DANCE_3 {
                 compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_12";
+                label = "TAP_DANCE_3";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp COMMA>, <&kp DQT>;
+                bindings = <&kp >, <&kp >;
             };
         };
 
@@ -280,7 +236,7 @@
         conditional_layers {
             compatible = "zmk,conditional-layers";
 
-            // if activating NAVI and NUMS layers together, activate ADJS layer instead
+            // if activating 1 and 3 layers together, activate 4 layer instead
             tri_layer {
                 if-layers = <1 3>;
                 then-layer = <4>;
@@ -292,10 +248,10 @@
 
                 LT_0 {
                         bindings = <
-   &kp TAB           &kp Q       &kp W      &kp E      &kp R      &kp T                      &kp Y      &kp U       &kp I     &kp O            &kp P          &kp BSPC
-   &mt LCTRL BSPC    &kp A       &kp S      &kp D      &kp F      &kp G                      &kp H      &kp J       &kp K     &kp L            &tdsqclsc      &kp RET
-   &tdcaps           &kp Z       &kp X      &kp C      &kp V      &kp B                      &kp N      &kp M       &tdcmdq   &kp DOT          &kp FSLH       &tdutbs
-                                            &kp TAB    &kp LALT   &kp SPACE                    &kp SPACE  &kp LGUI    &kp TAB
+   &kp TAB           &kp Q       &kp W      &kp E      &kp R      &kp T                      &kp Y      &kp U       &kp I     &kp O            &kp P        &kp TAB
+   &mt LCTRL BSPC    &kp A       &kp S      &kp D      &kp F      &kp G                      &kp H      &kp J       &kp K     &kp L            &kp TAB      &kp TAB
+   &kp TAB           &kp Z       &kp X      &kp C      &kp V      &kp B                      &kp N      &kp M       &kp TAB   &kp TAB          &kp TAB      &kp TAB
+                                            &kp TAB    &kp TAB   &kp SPACE                    &kp SPACE  &kp TAB    &kp TAB
                         >;
                 };
                 
