@@ -207,10 +207,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-&none  &trans                    &kp N7        &kp N8        &kp N9        &kp SLASH    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &trans    &none
-&none  &kp ENTER                 &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DQT           &kp PIPE  &none
-&none  &mt LEFT_SHIFT BACKSPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kt EQUAL         &kp BSLH  &none
-                                               &kp N0        &trans        &trans       &trans  &trans                &trans
+&none  &trans                    &kp N7        &kp N8        &kp N9        &kp SLASH    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &trans                &none
+&none  &mt ENTER ENTER           &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DQT           &mt ENTER ENTER       &none
+&none  &mt LEFT_SHIFT BACKSPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kt EQUAL         &mt RIGHT_SHIFT BSLH  &none
+                                               &trans        &trans        &trans       &trans  &trans                &trans
             >;
         };
 
