@@ -197,10 +197,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-&none  &trans  &mwh SCROLL_LEFT  &kp UP_ARROW    &mwh SCROLL_RIGHT  &trans              &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &mwh SCROLL_DOWN    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans            &trans          &mwh SCROLL_UP     &trans              &trans  &trans  &trans  &trans  &trans  &none
-                                 &trans          &trans             &trans              &trans  &trans  &trans
+&none  &trans            &mwh SCROLL_LEFT  &kp UP_ARROW    &mwh SCROLL_RIGHT  &trans               &trans  &trans  &trans  &trans  &trans  &none
+&none  &mwh SCROLL_LEFT  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &mwh SCROLL_RIGHT    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans            &trans            &trans          &mwh SCROLL_UP     &trans               &trans  &trans  &trans  &trans  &trans  &none
+                                           &trans          &trans             &trans               &trans  &trans  &trans
             >;
         };
 
