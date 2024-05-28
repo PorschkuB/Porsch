@@ -42,88 +42,33 @@
         compatible = "zmk,combos";
 
         Copy {
-            bindings = <&kp LC(INSERT)>;
-            key-positions = <3 2 4>;
+            bindings = <&copy>;
+            key-positions = <26 27>;
             layers = <0>;
         };
 
         Paste {
-            bindings = <&kp LS(INS)>;
-            key-positions = <14 15 16>;
+            bindings = <&paste>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
         Cut {
-            bindings = <&kp LS(DELETE)>;
-            key-positions = <26 28 27>;
-            layers = <0>;
-        };
-
-        prog-parenthesis {
-            bindings = <&par>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        prog-braces {
-            bindings = <&brackets>;
-            key-positions = <20 19>;
-            layers = <0>;
-        };
-
-        prog-less {
-            bindings = <&kp LT>;
-            key-positions = <32 19>;
+            bindings = <&cut>;
+            key-positions = <28 29>;
             layers = <0>;
         };
 
         prog-return {
-            bindings = <&kp COLON>;
-            key-positions = <19 21 20>;
+            bindings = <&kp A>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         prog-equals {
-            bindings = <&kp EQUAL>;
-            key-positions = <7 8 9>;
+            bindings = <&kp D>;
+            key-positions = <16 15>;
             layers = <0>;
-        };
-
-        enie {
-            bindings = <&kp RA(N)>;
-            key-positions = <36 19>;
-            layers = <0>;
-        };
-
-        enie-mac {
-            bindings = <&enie_mac>;
-            key-positions = <36 12 19>;
-            layers = <0>;
-        };
-
-        huh {
-            bindings = <&kp QUESTION>;
-            key-positions = <14 15 4>;
-        };
-
-        chin {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <25 26 3>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <19 18>;
-        };
-
-        under {
-            bindings = <&kp UNDER>;
-            key-positions = <31 30>;
-        };
-
-        prog-bracket {
-            bindings = <&kp LBKT>;
-            key-positions = <8 19>;
         };
     };
 
@@ -163,11 +108,12 @@
             label = "PASTE";
         };
 
-        enie_mac: enie_mac {
+        new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(N) &kp N &kp N>;
-            label = "ENIE_MAC";
+            bindings = <&none>, <&macro_tap>;
+
+            label = "NEW_MACRO";
         };
     };
 
