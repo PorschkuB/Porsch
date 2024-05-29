@@ -123,10 +123,10 @@
         alpha {
             display-name = "ALPHA";
             bindings = <
-&none  &kp Q              &kp W                &kp F   &kp P    &kp B          &kp J            &kp L            &kp U      &kp Y           &kp SEMICOLON             &none
-&none  &kp A              &kp R                &kp S   &kp T    &kp G          &kp M            &kp N            &kp E      &kp I           &kp O                     &none
-&none  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &kp C   &kp D    &kp V          &kp K            &kp H            &kp COMMA  &hmr RCTRL DOT  &hmr RIGHT_CONTROL SLASH  &none
-                                               &trans  &lt 2 A  &lt 3 SPACE    &lt 3 BACKSPACE  &lt 0 BACKSPACE  &trans
+&none  &kp Q              &kp W                &kp F   &kp P        &kp B          &kp J                     &kp L        &kp U      &kp Y           &kp SEMICOLON         &none
+&none  &kp A              &kp R                &kp S   &kp T        &kp G          &kp M                     &kp N        &kp E      &kp I           &kp O                 &none
+&none  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &kp C   &kp D        &kp V          &kp K                     &kp H        &kp COMMA  &hmr RCTRL DOT  &hmr RIGHT_ALT SLASH  &none
+                                               &trans  &lt 2 ENTER  &lt 3 SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER  &trans
             >;
         };
 
@@ -136,7 +136,7 @@
 &none  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &none
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &copy   &cut    &paste  &trans  &none
-                                   &bt BT_CLR    &trans        &trans          &trans  &trans  &trans
+                                   &trans        &bt BT_CLR    &trans          &trans  &trans  &trans
             >;
         };
 
@@ -162,10 +162,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans     &trans  &trans  &trans
             >;
 
             label = "s";
@@ -173,10 +173,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp F13  &kp F14    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp F15  &kp F16    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp F17  &kp F18    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans   &trans     &trans  &trans  &trans
             >;
         };
     };
