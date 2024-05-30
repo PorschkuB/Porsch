@@ -66,9 +66,19 @@
         };
 
         Manoonchai_L {
-            bindings = <&kp D>;
+            bindings = <&mt BACKSLASH APOS>;
             key-positions = <16 15>;
             layers = <0>;
+        };
+
+        Manoonchai_L_Shift {
+            bindings = <&kp C>;
+            key-positions = <16 15>;
+        };
+
+        Manoonchai_R_Shift {
+            bindings = <&kp D>;
+            key-positions = <19 20>;
         };
     };
 
