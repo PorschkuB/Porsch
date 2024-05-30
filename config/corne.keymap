@@ -74,11 +74,13 @@
         Manoonchai_L_Shift {
             bindings = <&kp C>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         Manoonchai_R_Shift {
             bindings = <&kp D>;
             key-positions = <19 20>;
+            layers = <0>;
         };
     };
 
@@ -136,7 +138,16 @@
 &none  &kp Q              &kp W                &kp F   &kp P        &kp B          &kp J                     &kp L        &kp U      &kp Y           &kp SEMICOLON         &none
 &none  &kp A              &kp R                &kp S   &kp T        &kp G          &kp M                     &kp N        &kp E      &kp I           &kp O                 &none
 &none  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &kp C   &kp D        &kp V          &kp K                     &kp H        &kp COMMA  &hmr RCTRL DOT  &hmr RIGHT_ALT SLASH  &none
-                                               &trans  &lt 2 ENTER  &lt 3 SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 2 ENTER  &trans
+                                               &trans  &lt 3 ENTER  &lt 4 SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 3 ENTER  &trans
+            >;
+        };
+
+        Shift {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
